@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="首页" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/main_clear_pwd"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/login_ed_bn_bg"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="清除手势密码" />
+
+       <!--  android:background="@drawable/login_ed_bn_bg" -->
+        <TextView
+            android:id="@+id/main_setting"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/login_line_bn_bg"
+            android:gravity="center"
+            android:text="设置" />
+    </LinearLayout>
+
+
+</FrameLayout>

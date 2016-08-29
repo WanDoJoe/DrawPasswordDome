@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d5d5d5"
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+    android:id="@+id/setting_top_ll"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/login_ed_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="手势密码锁定" />
+
+        <com.sinosoft.drawpassworddome.widget.ToggleButton 
+            android:id="@+id/setting_locatPwd_tb"
+            android:layout_height="30dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="12dp"
+            android:layout_width="54dp"
+            toggle:isDefaultOn="true"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="6dp" >
+
+        <Button
+            android:id="@+id/setting_modifi_bn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/login_bn_bg"
+            android:gravity="center"
+            android:text="修改手势密码" />
+    </FrameLayout>
+</LinearLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_pwdView_fl"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@android:color/white" >
+
+        <com.sinosoft.drawpassworddome.component.LocusPassWordView
+            android:id="@+id/setting_locusview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/setting_top_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+             android:layout_marginTop="6dp"
+             android:textSize="16sp"
+             android:textColor="@color/holo_blue_light"
+            android:text="info" />
+    </FrameLayout>
+
+</LinearLayout>

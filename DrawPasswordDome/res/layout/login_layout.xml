@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/login_layout_bg"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/login_upradius_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="登录" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" >
+
+            <EditText
+                android:id="@+id/login_name"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/login_ed_bg"
+                android:hint="用户名" />
+
+            <Button
+                android:id="@+id/login_clearname"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="4dp"
+                android:background="#d5d5d5"
+                android:text="clear"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" >
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/login_ed_bg"
+                android:hint="密码" />
+
+            <Button
+                android:id="@+id/login_clearpassword"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="4dp"
+                android:background="#d5d5d5"
+                android:text="clear"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" >
+
+            <CheckBox
+                android:id="@+id/login_savepwd"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dp"
+                android:text="记住密码" />
+
+            <Button
+                android:id="@+id/login_login"
+                android:layout_width="80dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/login_bn_bg"
+                android:text="登录" />
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>
